@@ -1,0 +1,61 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+// Variables
+$primary-color:rgb(161, 161, 161);
+$secondary-color:rgb(211, 211, 211);
+$background-color: #ffffff;
+$text-color: #111111;
+$border-color: #111111;
+$border-radius: 5px;
+
+// Libs
+@import 'header';
+@import 'footer';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Cormorant Upright', serif;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.url-input {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    font-size: 16px;
+    width: 300px;
+    height: 20px;
+
+    &:focus {
+        border-color: #aaa;
+    }
+
+    &::placeholder {
+        color: #999;
+    }
+}
+
+.button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    font-size: 16px;
+    height: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+  

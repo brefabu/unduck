@@ -1,0 +1,58 @@
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    height: 100px;
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        gap: 2rem;
+        margin: 0;
+
+        & a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    & .logo {
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, 0%);
+        width: 250px;
+        height: 250px;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        gap: 2rem;
+        margin: 0;
+
+        & .button {
+            background-color: $primary-color;
+            border-radius: $border-radius;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border: 1px solid transparent;
+
+            &:hover {
+                border: 1px solid $border-color;
+                text-decoration: underline;
+            }
+        }
+    }
+}
